@@ -1,0 +1,40 @@
+Comandos para criar e entrar na branch no git:
+
+No git bash, após clonar o repositório e entrar no projeto malams:
+
+1- Verificar as branchs que já existem:
+- git branch -a
+
+2- Comando para criar nova branch e já entrar nela:
+- git checkout -b nome-da-branch
+
+3- Agora suba a branch pro github:
+- git push -u origin nome-da-branch
+
+4- Para sair da branch e ir pra main (que é a principal):
+- git checkout main
+
+Comandos para subir projeto na branch:
+
+- git status
+- git add .
+- git commit -m "Descrição das alterações"
+
+A- Agora suba a branch para o repositório remoto:
+- git push origin sua-branch
+
+B- Vai para o principal (main):
+- git checkout main
+
+C- Antes de juntar as mudanças, garanta que sua main está atualizada com:
+- git pull origin main
+
+D- Agora, mescle suas alterações na main:
+- git merge sua-branch
+
+E- Se houver conflitos, resolva-os manualmente e depois finalize o merge com:
+- git commit -m "Resolvendo conflitos"
+
+F- Suba a branch main atualizada para o repositório remoto:
+- git push origin main
+
